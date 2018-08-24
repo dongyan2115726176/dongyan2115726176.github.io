@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+	<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	<script src="js/jquery-1.9.1.js">$.noConflict();</script>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/font.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="header_center">
+			<div class="container">
+			<div class="header_nav">
+				<span class="header_left">咨询电话：010—62797221</span>
+				<div class="header_right">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#"><img src="image/index_logo.png"/></a>
+	        </div>
+	        <div id="navbar" class="collapse navbar-collapse">
+	          <ul class="nav navbar-nav">
+	            <li class="active"><a href="#">首页</a></li>
+	            <li><a href="#about">关于我们</a></li>
+	            <li><a href="#contact">咨询活动</a></li>
+	            <li class="#contact"><a href="#">权威师资</a></li>
+	            <li><a href="#about">精品课程</a></li>
+	            <li><a href="#about">招生简介</a></li>
+	            <li><a href="#about">精品课程</a></li>
+	            <li><a href="#about">在线报名</a></li>
+	          </ul>
+	        </div>
+	     </div>
+	</div>
+	<div class="bg"></div>
+	<div class="container">
+		<div class="online_left">
+			<span>首页><a href="#">在线报名</a></span>
+			<div class="tab_p">
+				<p class="online" id="bgc">在线报名</p>
+				<p class="online">报名流程</p>
+			</div>	
+			
+		</div>
+		<div class="online_right">
+			<div class="tab1 tab">
+				<div class="online_right_top">
+					<h2 style="font-weight: bold;font-size: 0.47rem;display: inline-block;height: 41px;">在线报名</h2>
+					<span>online registration</span>
+				</div>
+				<div class="online_right_bottom">
+					<span>
+						特别提示：特别提示：在您填写以下申请表之前，请认真阅读 ''
+						<a href="">《报名流程》</a>
+						<i class="icon">*</i>
+						 为必填项
+					</span>
+					<form action="">
+						<!--立项号-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								 课程立项号：
+							</div>
+							<span class="select_box">
+								<select name="">
+									<option value="--">--</option>
+								</select>
+						</div>
+						<!--姓名-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  姓名：
+							</div>
+							<input type="text" class="username" name = "username" placeholder="不超过10个字" required/>
+							<p class="icon red xm"></p>
+						</div>
+						<!--英文名-->
+						<div>
+							<div>英文名：</div>
+							<input type="text" name="ename"/>
+						</div>
+						<!--性别-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								 性别：
+							</div>
+							
+							<input type="radio" name="sex" id="nan" required="required" value="男"/>
+							<label for="nan">男</label>
+							<input type="radio" name="sex" id="nv" required="required" value="女"/>
+							<label for="nv">女</label>
+						</div>
+						<!--出生年月日-->
+						<div class="birthday">
+							<div>
+								<i class="icon">*</i>
+								 出生日期：
+							</div>
+							<span>
+								<select name="birthday" class="nian">
+									<option value="--">--</option>
+								</select>
+							</span>
+							
+								年
+							<span>
+								<select name="birthday" class="yue">
+									<option value="--">--</option>
+								</select>
+							</span>
+							·
+								月
+							<span>
+								<select name="birthday" class="ri">
+									<option value="--">--</option>
+								</select>
+							</span>
+							
+								日
+						</div>
+						<!--IDcard-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  身份证：
+							</div>
+							<input type="text" class="card" name="card" required/>
+							<p class="icon red sfz"></p>
+						</div>
+						<!--国籍-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  国籍：
+							</div>
+							<select name="" class="country">
+								<option value="中国">中国</option>
+							</select>
+							
+						</div>
+						<!--民族-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  民族：
+							</div>
+							<select name="" class="min">
+								<option value="汉族">汉族</option>
+							</select>
+						</div>
+						<!--教学背景-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  教学背景：
+							</div>
+							<select name="">
+								<option value="无">无</option>
+							</select>
+							
+						</div>
+						<!--职称-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  职称：
+							</div>
+							<select name="">
+								<option value="无">无</option>
+							</select>
+						</div>
+						<!--职务级别-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  职务级别：
+							</div>
+							<select name="">
+								<option value="无">无</option>
+							</select>
+						</div>
+						<!--政治面貌-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  职务级别：
+							</div>
+							<select name="">
+								<option value="无">无</option>
+							</select>
+						</div>
+						<!--入学年份-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  入学年份：
+							</div>
+							<select name="" class="nian">
+								<option value="--">--</option>
+							</select>
+						</div>
+						<!--生源省-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  生源省：
+							</div>
+							<select name="">
+								<option value="北京市">北京市</option>
+							</select>
+						</div>
+						<!--审核机关1-->
+						<div>
+							<div>审核机关1：</div>
+							<input type="text"/>
+						</div>
+						<!--审核机关2-->
+						<div>
+							<div>审核机关2：</div>
+							<input type="text"/>
+						</div>
+						<!--手机号-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  手机号：
+							</div>
+							<input type="text" class="phone" required="required" name="phone"/>
+							<p class="icon red sj"></p>
+						</div>
+						<!--单位及职务-->
+						<div>
+							<div>
+								<i class="icon">*</i>
+								  单位及职务：
+							</div>
+							<input type="text" required="required"/>
+						</div>
+						<!--地址-->
+						<div>
+							<div>
+								
+								  地址：
+							</div>
+							<input type="text"/>
+						</div>
+						<!--邮箱-->
+						<div>
+							<div>邮箱：</div>
+							<input type="text" class="email" name="email"/>
+							<p class="icon red yx"></p>
+						</div>
+						<!--邮政编码-->
+						<div>
+							<div>邮政编码：</div>
+							<input type="text"/>
+						</div>
+						<div class="tj">
+							<input type="button" name="" id="btn1" value="提交" />
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="tab2 tab">
+				<div class="online_right_top">
+					<h2 style="font-weight: bold;font-size: 0.47rem;display: inline-block;height: 41px;">报名流程</h2>
+					<span>Registration process
+</span>
+				</div>
+				<div class="online_right_bottom">
+					<p>联系电话：+86-010-62702681 62702682</p>
+					<p>E-mail: tcaad@mail.tsinghua.edu.cn</p>
+				</div>
+				<div class="baoming">
+					<input type="button" value="立即报名"/>
+					<input type="button" value="在线咨询"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="logo1"><img src="image/bottom_logo.png" alt="" /></div>
+			<div class="index">
+				<ul>
+					<li>Online</li>
+					<li>Registration</li>
+					<li>在线报名</li>
+				</ul>
+				<ul>
+					<li>Online</li>
+					<li>recruitment brochore</li>
+					<li>招生简章</li>
+				</ul>
+				<ul>
+					<li>Contact us</li>
+					<li>联系我们</li>
+				</ul>
+				<ul>
+					<li>入学须知</li>
+					<li>报名流程</li>
+					<li>在线咨询</li>
+				</ul>
+				<ul>
+					<li>室内常规班</li>
+					<li>室内高研班</li>
+					<li>室内陈设班</li>
+					<li>家具高研班</li>
+				</ul>
+				<ul class="img">
+					<li>地址:北京海淀区清华大学美术学院</li>
+					<li>电话:010-62797221</li>
+					<li>邮箱:qmpx@163.com</li>
+					<li><img src="image/index_erweima1.jpg" alt="" /></li>
+					<li><img src="image/index_erweima2.jpg" alt="" /></li>
+					<div class="wl">
+						<li><img src="image/index_wx.png" alt="" /></li>
+						<li><img src="image/index_xl.png" alt="" /></li>
+					</div>
+					
+				</ul>
+				
+			</div>
+			<br /><br />
+			<div class="copy1">
+					<span> Copyright@.All Right Reserved </span>
+					<img src="image/bottom_jt.png" alt="" />
+				</div>
+		</footer>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+        //正则判断
+        function checkName(){
+            //获取值
+
+            $(".username").on("input",function(){
+                console.log(11);
+                var username=$('.username').val();
+                //正则表达式
+                var reg=/^[a-zA-Z][a-zA-Z0-9]{4,9}$/;
+                //检测输入内容是否匹配正则表达式
+                if(!reg.test(username)){
+                    $('.xm')[0].innerHTML='姓名输入错误';
+                    return;
+                }
+
+                $('.xm')[0].innerHTML='';
+                //	    return true;
+            })
+        }
+
+        function checkEmail(){
+            $(".email").on("input",function(){
+                var email=$('.email').val();
+                var reg=/^\w+@\w+\.com|cn|net$/;
+                if(!reg.test(email)){
+                    $('.yx')[0].innerHTML='邮箱不合法';
+                    return;
+                }
+                $('.yx')[0].innerHTML='';
+
+            })
+        }
+
+
+        function checkTel(){
+            $(".phone").on("input",function(){
+                //
+                var phone=$('.phone').val();
+                var reg=/^1[34578]\d{9}$/;
+
+                if(!reg.test(phone)){
+                    $('.sj')[0].innerHTML='手机号不合法';
+                    return;
+                }
+                $('.sj')[0].innerHTML='';
+            })
+
+        }
+        //
+        //
+        function checkCid(){
+            console.log(11);
+            $('.card').on("input",function(){
+
+                var card=$('.card').val();
+                var reg=/^\d{15}$|^\d{17}\d|x$/;
+
+                if(!reg.test(card)){
+                    $('.sfz')[0].innerHTML='身份证不合法';
+                    return;
+                }
+                $('.sfz')[0].innerHTML='';
+            })
+
+        }
+        var events = [checkName,checkEmail,checkTel,checkCid];
+        for (var i = 0;i<events.length;i++) {
+            // console.log(111)
+            events[i]();
+        }
+        var btn1 = document.getElementById('btn1');
+        btn1.onclick = function(){
+            var username=$('.username').val();
+            var email=$('.email').val();
+            var phone=$('.phone').val();
+            var card=$('.card').val();
+            //判断不能为空
+            if (username==''||card==''||phone==''||email==''){
+                alert("填写内容不能为空");
+                return;
+            }
+            $.post("http://127.0.0.1/dumeiyao/zhuce1/register.php",{"username":username,"card":card,"phone":phone,"email":email},function (data) {
+                alert(data);
+                if (data=="注册成功"){
+                    location.href = "denglu.html";
+                }
+
+            })
+
+        }
+       
+	</script>
+</body>
+</html>

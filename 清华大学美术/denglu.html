@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录</title>
+    <script src="js/jquery-1.9.1.js"></script>
+</head>
+<body>
+<h1>登录页面</h1>
+<form>
+    <div>
+        <label for="login">账号:</label>
+        <input type="text" name="username" id="login">
+    </div>
+    <div>
+        <label for="card">身份证:</label>
+        <input type="text" name="card" id="card">
+    </div>
+    <div>
+        <label for="phone">手机:</label>
+        <input type="text" name="phone" id="phone">
+    </div>
+    <div>
+        <label for="email">邮箱:</label>
+        <input type="text" name="email" id="email">
+    </div>
+    <div>
+        <input type="button" value="登录" id="submit">
+    </div>
+</form>
+<script type="text/javascript">
+    $("#submit").on("click",function(){
+        var username = $("#login").val();
+        var card = $("#card").val();
+        var phone = $("#phone").val();
+        var email = $("#email").val();
+        $.post("http://127.0.0.1/dumeiyao/zhuce1/login.php",{
+            "username":username,
+            "card":card,
+            "phone":phone,
+            "email":email
+
+        },function(data){
+            // alert(data);
+            if(data=="登录成功"){
+                location.href = "index.html";
+            }
+        });
+    });
+</script>
+</body>
+</html>
